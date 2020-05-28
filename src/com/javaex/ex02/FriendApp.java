@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import com.javaex.ex03.Goods;
-
 public class FriendApp extends Friend{
 
     public static void main(String[] args) {
@@ -16,9 +14,7 @@ public class FriendApp extends Friend{
     	for(int i =0;i<3;i++) {
     	System.out.println("친구를 입력해주세요");
     	String data[]=sc.nextLine().split(",");
-    	if(data[0].equals("q")) {
-    		break;
-    	}
+
     	f = new Friend(data[0],data[1],data[2]);
     	fList.add(f);
     	}
